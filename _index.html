@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>   
+        <!-- Navigation Bar -->
+        <nav id="navbar">
+            <a href="_index.html" id="logo">
+                <img id="logo" src="/assets/logo.svg" alt="Sewaltee Logo">
+            </a>
+            <div id="nav-links">
+                <a href="_index.html#lamps" class="lamps-link">Lamps</a>
+                <a href="about.html">Studio</a>
+                <a href="custom.html">Custom</a>
+                <a href="cart.html">Cart (<span class="cart-counter">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <hero>
+        <!-- Hero Section -->
+        <div class="section" id="hero-section">
+            <div class="hero">
+                <div class="image-container" id="imageContainer">
+                    <div class="overlay"></div>
+                    <div class="content-container">
+                        <div class="hero-text">
+                            <h1>Light of Innovation</h1>
+                        </div>
+                        <div class="button-container">
+                            <a href="#lamps" class="explore-button">explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </hero>
+
+    <lamps>
+        <div class="section">
+            <div id="lamps" class="product-container"></div>
+            <script src="lamps-background.js"></script>
+        </div>
+    </lamps>
+
+
+
+    <script src="header.js" defer></script>
+    <script src="hero.js" defer></script>
+    <script src="lamps.js" defer></script>
+    <script src="footer.js" defer></script>
+    <script src="cart.js"></script>
+    
+</body>
+</html>
