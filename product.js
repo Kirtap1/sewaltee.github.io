@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="specs">
                 ${product.specs.map(spec => `<div class="spec-item">${spec}</div>`).join('')}
             </div>
-            <button class="add-to-cart" data-product='${JSON.stringify(product)}'>
+            <button class="add-to-cart buy-now" data-product='${JSON.stringify(product)}'>
                 Buy Now
             </button>
         </div>
