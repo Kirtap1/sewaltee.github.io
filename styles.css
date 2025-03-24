@@ -468,132 +468,6 @@ nav {
     }
 }
 
-/* About Page Styling */
-.about-section {
-    height:fit-content;
-}
-
-.marquee-header {
-    padding: 8rem 5% 4rem;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    max-width: 800px;
-}
-
-.foundation-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem 2rem;
-    background: var(--primary-color);
-    border: 1px solid rgba(0,0,0,0.1);
-    margin-top: 3rem;
-}
-
-.studio-grid {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    gap: 5rem;
-    padding: 6rem 5%;
-}
-
-.floating-image {
-    position: relative;
-    padding-bottom: 130%;
-}
-
-.floating-image img {
-    position: absolute;
-    width: 85%;
-    height: 85%;
-    object-fit: cover;
-    box-shadow: 0 40px 60px rgba(0,0,0,0.05);
-}
-
-.awards-panel {
-    margin-top: -10%;
-    padding-left: 25%;
-}
-
-.award-card {
-    padding: 2rem;
-    background: var(--primary-color);
-    border: 1px solid rgba(0,0,0,0.08);
-}
-
-.narrative-chapter {
-    margin-bottom: 6rem;
-}
-
-.chapter-number {
-    font-size: 1.2rem;
-    letter-spacing: 0.1em;
-    opacity: 0.4;
-    display: block;
-    margin-bottom: 1.5rem;
-}
-
-.process-display {
-    display: grid;
-    gap: 3rem;
-    margin: 4rem 0;
-}
-
-.process-card {
-    padding: 2rem;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.signature-block {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0,0,0,0.05);
-}
-
-.engagement-panel {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    padding: 6rem 5%;
-    background: var(--primary-color);
-}
-
-.cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem 3rem;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateX(10px);
-}
-
-@media (max-width: 1024px) {
-    .studio-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .floating-image {
-        padding-bottom: 70%;
-    }
-}
-
-
-
-
-
-
 
 /* Cart Styles */
 .cart-section {
@@ -841,4 +715,126 @@ input, textarea {
 input:focus, textarea:focus {
     border-color: var(--primary-color);
     outline: none;
+}
+
+
+
+
+
+/* Unique about section styles */
+.about-hero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.about-hero-content {
+    text-align: center;
+}
+
+.about-main-title {
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+}
+
+.about-tagline {
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    color: #666;
+}
+
+.about-intro {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.about-team-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-team-image {
+    height: 400px;
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+
+.about-team-content {
+    padding: 2rem;
+}
+
+.about-team-member {
+    margin-bottom: 4rem;
+}
+
+.about-member-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-member-role {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.about-member-bio {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-member-quote {
+    padding: 1.5rem;
+    border-left: 3px solid #000;
+    font-style: italic;
+    color: #444;
+}
+
+.about-philosophy {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.about-philosophy-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.about-gallery-item {
+    height: 250px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .about-team-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+    
+    .about-main-title {
+        font-size: 2.5rem;
+    }
 }
