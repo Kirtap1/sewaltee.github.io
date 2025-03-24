@@ -49,6 +49,14 @@ nav {
         height: 3vw; /* Half the original vw value */
         max-height: 17.5px; /* Half the original max-height */
     }
+    #nav-links a:hover {
+        color: inherit;
+        font-size: inherit;
+    }
+    #nav-links a:active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
 }
 
 #nav-links {
@@ -57,6 +65,7 @@ nav {
     margin-left: auto;
     flex-wrap: nowrap;
 }
+
 
 #nav-links a {
     position: relative;
